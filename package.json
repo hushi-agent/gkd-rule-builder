@@ -1,0 +1,25 @@
+{
+  "name": "gkd-rule-builder",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "本地 GKD 快照导入、可视化选点与规则生成工具",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@gkd-kit/selector": "^0.5.23",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "json5": "^2.2.3",
+    "jszip": "^3.10.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.2.2",
+    "vitest": "^5.0.0",
+    "vue": "^3.5.42",
+    "vue-tsc": "^3.3.11"
+  }
+}
