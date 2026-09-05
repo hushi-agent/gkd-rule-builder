@@ -1,0 +1,25 @@
+{
+  "name": "GKD 开屏广告自动屏蔽规则生成器",
+  "short_name": "GKD规则生成器",
+  "description": "导入 GKD 快照，可视化选点生成开屏广告自动屏蔽规则（JSON5）",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#111827",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

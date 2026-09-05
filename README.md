@@ -41,6 +41,22 @@ PWA 安装：`npm run build && npm run preview` 后，用 Android Chrome 打开 
 
 部署后在手机浏览器打开 HTTPS 地址，点右上角菜单「安装应用」/「添加到主屏幕」即可。首次联网打开一次后，断网也能用。
 
+### 打包为安卓 APK（可选）
+
+本工程可用 Capacitor 包装成安卓原生 App（内置 WebView 加载构建后的站点），生成可侧载的 APK：
+
+```bash
+npm install @capacitor/core @capacitor/cli @capacitor/android
+npm run build
+npx cap add android      # 若目录下还没有 android/ 才需要
+npx cap sync android
+npx cap open android     # 在 Android Studio 打开后，Build → Build APK(s)
+```
+
+仓库根目录已含 `capacitor.config.ts`（应用 id：`com.hushi.gkdbuilder`）。克隆后若已包含 `android/` 目录，直接执行 `npm run build && npx cap sync android && npx cap open android` 即可。
+
+注意：编译需要 JDK 17 + Android Studio/SDK；该工具依赖 WebAssembly GC，手机的 Android System WebView 需为 Chromium 117+。
+
 ## 使用流程
 
 1. 点击“导入快照 zip”选择 GKD 快照，或点击“加载示例快照”。

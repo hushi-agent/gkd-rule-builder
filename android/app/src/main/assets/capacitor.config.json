@@ -1,0 +1,9 @@
+{
+	"appId": "com.hushi.gkdbuilder",
+	"appName": "GKD规则生成器",
+	"webDir": "dist",
+	"backgroundColor": "#111827",
+	"server": {
+		"androidScheme": "https"
+	}
+}

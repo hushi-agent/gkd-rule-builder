@@ -5,7 +5,6 @@ import SnapshotViewer from './components/SnapshotViewer.vue';
 import NodeTree from './components/NodeTree.vue';
 import AttrPanel from './components/AttrPanel.vue';
 import RulePanel from './components/RulePanel.vue';
-import InstallPrompt from './components/InstallPrompt.vue';
 import type { Snapshot, RawNode } from './types/snapshot';
 import type { MatchResult } from './lib/selector';
 import { buildNodeTree } from './lib/snapshot';
@@ -195,7 +194,6 @@ watch(
       </section>
     </main>
 
-    <InstallPrompt />
   </div>
 </template>
 
